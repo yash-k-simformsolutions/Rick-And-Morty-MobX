@@ -1,0 +1,26 @@
+.counter{
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.counter_Number{
+    display: flex;
+    align-items: center;
+}
+
+.counter_Number > button{
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    /* color: #fff; */
+}
+
+.MuiSvgIcon-root{
+    font-size: 30px;
+}

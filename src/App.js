@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Counter from './components/Counter';
+import SocialCard from './components/SocialCard';
+import Store from './store/Store';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h2 style={{ textAlign: 'center', marginBottom: '10px' }}>MobX Demo with Rick and Morty</h2>
+      <div className="app_Card">
+        <SocialCard store={Store} />  
+        <Counter store={Store} />
+      </div>
     </div>
   );
 }
